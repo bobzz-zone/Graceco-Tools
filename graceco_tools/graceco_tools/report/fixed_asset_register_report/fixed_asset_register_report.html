@@ -15,6 +15,7 @@
 			<th style="width: 15%">Warehouse</th>
 			<th style="width: 15%">Purchase Date</th>
 			<th style="width: 15%">Book Value</th>
+			<th style="width: 15%">Gross Purchase Amount</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -29,6 +30,7 @@
 					<td >{%= row["Warehouse"] %}</td>
 					<td>{%= dateutil.str_to_user(row["Purchase Date"]) %}</td>
 					<td >{%= format_currency(row["Book Value"]) %}</td>
+					<td >{%= format_currency(row["Gross Purchase Amount"]) %}</td>
 			</tr>
 		{% } %}
 	</tbody>
